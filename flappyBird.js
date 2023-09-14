@@ -16,7 +16,7 @@ function drop(){
   
   
   if(dropStyle > 500){
-   alert("game over")
+   alert("game over ,please refresh the page")
   }
    
   
@@ -27,7 +27,7 @@ function drop(){
    var pipeGapBottom = PipeGapTop + 150
   
    if (CurrentPipeLeft <=40 && !((dropStyle  >= PipeGapTop && dropStyle <=pipeGapBottom))){
-      alert("game over")
+      alert("game over ,please refresh the page")
    }
    }
    
