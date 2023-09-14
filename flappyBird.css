@@ -1,0 +1,73 @@
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+transition: 1s;
+
+}
+.bird{
+    position: absolute;
+    top: 200px;
+    height: 40px;
+    width:40px;
+    border-radius: 50%;
+    background-image: url(./images/png-clipart-flappy-bird-blue-xbox-360-flappy-bird-text-rectangle-removebg-preview.png);
+    background-size: 226% 170%;
+    background-position-x:-25px ;
+    background-position-y:-15px ;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.game{
+    
+    height: 500px;
+    width: 80%;
+    background-color: bisque;
+    box-shadow: 0px 0px 6px 1px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.pipe{
+    height: 100%;
+    width: 12%;
+    background-color: #51CC5A;
+    position: relative;
+    left: 83%;
+    animation: pipe 4s infinite linear;
+}
+
+.pipeGap{
+    position: relative;
+    height: 150px;
+    background-color: bisque;
+    top: 190px;
+}
+@keyframes pipe{
+    0%{
+        left: 120%;
+
+    }
+    100%{
+        left: -20%;
+    }
+}
+.score{
+    z-index: 2;
+    margin-bottom: 400px;
+    border: 10px solid rgb(255, 167, 53);
+    background-color: rgb(14, 44, 14);
+    color: white;
+    height: 50px;
+    width: 90px;
+border-radius: 20%;
+justify-content: center;
+display: flex;
+align-items: center;
+box-shadow: 0px 0px 5px 0px black;
+
+}
